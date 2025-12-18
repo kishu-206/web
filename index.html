@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IEEE VIT Vellore — Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="IEEE VIT Vellore Home">
+          <span class="brand-mark" aria-hidden="true">IEEE</span>
+          <span class="brand-text">
+            <span class="brand-title">IEEE VIT Vellore</span>
+            <span class="brand-subtitle">Student Chapter</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" data-testid="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          ☰
+        </button>
+
+        <nav class="site-nav" data-testid="site-nav">
+          <a class="nav-link" href="index.html" data-testid="nav-home-link">Home</a>
+          <a class="nav-link" href="about.html" data-testid="nav-about-link">About</a>
+          <a class="nav-link" href="activities.html" data-testid="nav-activities-link">Activities</a>
+          <a class="nav-link" href="events.html" data-testid="nav-events-link">Events</a>
+          <a class="nav-link" href="contact.html" data-testid="nav-contact-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <p class="eyebrow" data-testid="hero-eyebrow">Technical • Community • Impact</p>
+            <h1 class="hero-title" data-testid="hero-title">Building engineers through hands-on technology, research, and collaboration.</h1>
+            <p class="hero-description" data-testid="hero-description">
+              IEEE VIT Vellore is a student-led chapter focused on learning by doing: workshops, projects, talks, and
+              events that make technology approachable.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="events.html" data-testid="hero-cta-events">Explore events</a>
+              <a class="btn" href="activities.html" data-testid="hero-cta-activities">See activities</a>
+            </div>
+          </div>
+
+          <div class="hero-card" data-testid="hero-stats-card">
+            <h2 class="card-title">What we do</h2>
+            <ul class="stat-list">
+              <li class="stat-item">
+                <span class="stat-number" data-testid="stat-1">Workshops</span>
+                <span class="stat-label">Beginner-friendly sessions on tools & fundamentals</span>
+              </li>
+              <li class="stat-item">
+                <span class="stat-number" data-testid="stat-2">Projects</span>
+                <span class="stat-label">Build and ship real solutions with teams</span>
+              </li>
+              <li class="stat-item">
+                <span class="stat-number" data-testid="stat-3">Talks</span>
+                <span class="stat-label">Industry & research discussions, Q&A included</span>
+              </li>
+              <li class="stat-item">
+                <span class="stat-number" data-testid="stat-4">Community</span>
+                <span class="stat-label">Peer learning, mentorship, and volunteering</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title" data-testid="home-section-title">Featured focus areas</h2>
+            <p class="section-subtitle" data-testid="home-section-subtitle">A simple snapshot of the chapter’s technical nature.</p>
+          </div>
+
+          <div class="grid-3">
+            <article class="feature" data-testid="feature-ai">
+              <h3>AI & Data</h3>
+              <p>Learn foundations, build mini-projects, and explore real-world applications.</p>
+            </article>
+            <article class="feature" data-testid="feature-cyber">
+              <h3>Cybersecurity</h3>
+              <p>Hands-on basics: web security concepts, safe practices, and capture-the-flag style learning.</p>
+            </article>
+            <article class="feature" data-testid="feature-iot">
+              <h3>IoT & Hardware</h3>
+              <p>Start with sensors + microcontrollers, then build systems that connect software and hardware.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container split">
+          <div>
+            <h2 class="section-title" data-testid="home-why-title">Why join?</h2>
+            <ul class="checklist" data-testid="home-why-list">
+              <li>Learn with a structured, beginner-first approach.</li>
+              <li>Build confidence by presenting and sharing work.</li>
+              <li>Meet people who enjoy making things together.</li>
+              <li>Explore research, publications, and competitions.</li>
+            </ul>
+          </div>
+
+          <div class="callout" data-testid="home-callout">
+            <h3 class="callout-title">Quick interaction</h3>
+            <p class="callout-text">Tap the button to see a simple JavaScript interaction.</p>
+            <button class="btn primary" type="button" data-testid="hello-button" data-action="hello">Say hello</button>
+            <p class="muted" data-testid="hello-output" id="helloOutput">(No message yet)</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-text" data-testid="footer-text">© <span id="year"></span> IEEE VIT Vellore • Built with basic HTML, CSS, and JavaScript</p>
+        <div class="footer-links" data-testid="footer-links">
+          <a href="https://www.instagram.com/ieeevitvellore/" target="_blank" rel="noreferrer" data-testid="footer-instagram">Instagram</a>
+          <a href="https://www.linkedin.com/company/ieee-vit-vellore/" target="_blank" rel="noreferrer" data-testid="footer-linkedin">LinkedIn</a>
+          <a href="https://github.com/ieee-vit" target="_blank" rel="noreferrer" data-testid="footer-github">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

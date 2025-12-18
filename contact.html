@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IEEE VIT Vellore — Contact</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="IEEE VIT Vellore Home">
+          <span class="brand-mark" aria-hidden="true">IEEE</span>
+          <span class="brand-text">
+            <span class="brand-title">IEEE VIT Vellore</span>
+            <span class="brand-subtitle">Student Chapter</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" data-testid="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          ☰
+        </button>
+
+        <nav class="site-nav" data-testid="site-nav">
+          <a class="nav-link" href="index.html" data-testid="nav-home-link">Home</a>
+          <a class="nav-link" href="about.html" data-testid="nav-about-link">About</a>
+          <a class="nav-link" href="activities.html" data-testid="nav-activities-link">Activities</a>
+          <a class="nav-link" href="events.html" data-testid="nav-events-link">Events</a>
+          <a class="nav-link" href="contact.html" data-testid="nav-contact-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow" data-testid="contact-eyebrow">Contact</p>
+          <h1 class="page-title" data-testid="contact-title">Let’s connect</h1>
+          <p class="page-subtitle" data-testid="contact-subtitle">This page includes basic form validation (JavaScript).</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div>
+            <h2 class="section-title" data-testid="contact-social-title">Social links</h2>
+            <p class="muted" data-testid="contact-social-text">For updates, announcements, and public projects:</p>
+
+            <div class="link-cards" data-testid="contact-links">
+              <a class="link-card" href="https://www.instagram.com/ieeevitvellore/" target="_blank" rel="noreferrer" data-testid="contact-instagram">
+                <h3>Instagram</h3>
+                <p>@ieeevitvellore</p>
+              </a>
+              <a class="link-card" href="https://www.linkedin.com/company/ieee-vit-vellore/" target="_blank" rel="noreferrer" data-testid="contact-linkedin">
+                <h3>LinkedIn</h3>
+                <p>IEEE VIT Vellore</p>
+              </a>
+              <a class="link-card" href="https://github.com/ieee-vit" target="_blank" rel="noreferrer" data-testid="contact-github">
+                <h3>GitHub</h3>
+                <p>ieee-vit</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="card" data-testid="contact-form-card">
+            <h2 class="card-title">Send a message</h2>
+            <p class="muted">(Demo form — no backend. We store your last message in your browser.)</p>
+
+            <form id="contactForm" data-testid="contact-form">
+              <label class="label" for="name" data-testid="contact-name-label">Your name</label>
+              <input id="name" name="name" type="text" placeholder="e.g., Ananya" data-testid="contact-name-input" />
+              <p class="error" id="nameError" data-testid="contact-name-error"></p>
+
+              <label class="label" for="email" data-testid="contact-email-label">Email</label>
+              <input id="email" name="email" type="email" placeholder="e.g., ananya@gmail.com" data-testid="contact-email-input" />
+              <p class="error" id="emailError" data-testid="contact-email-error"></p>
+
+              <label class="label" for="message" data-testid="contact-message-label">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Write your message..." data-testid="contact-message-input"></textarea>
+              <p class="error" id="messageError" data-testid="contact-message-error"></p>
+
+              <button class="btn primary" type="submit" data-testid="contact-submit">Submit</button>
+              <button class="btn" type="button" data-testid="contact-load-last" data-action="load-last">Load last saved</button>
+
+              <p class="success" id="formSuccess" data-testid="contact-success"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-text" data-testid="footer-text">© <span id="year"></span> IEEE VIT Vellore</p>
+        <div class="footer-links" data-testid="footer-links">
+          <a href="https://www.instagram.com/ieeevitvellore/" target="_blank" rel="noreferrer" data-testid="footer-instagram">Instagram</a>
+          <a href="https://www.linkedin.com/company/ieee-vit-vellore/" target="_blank" rel="noreferrer" data-testid="footer-linkedin">LinkedIn</a>
+          <a href="https://github.com/ieee-vit" target="_blank" rel="noreferrer" data-testid="footer-github">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
