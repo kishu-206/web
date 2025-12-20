@@ -11,6 +11,7 @@ This project is hosted on https://ieee-demo-10kh.onrender.com and can be hosted 
 ---
 
 ## 📁 Project Structure
+```text
 web/
 ├── index.html
 ├── about.html
@@ -18,10 +19,11 @@ web/
 ├── events.html
 ├── contact.html
 ├── css/
-│ └── style.css
+│   └── style.css
 ├── js/
-│ └── script.js
+│   └── script.js
 └── README.md
+```
 ---
 
 ## 🎨 Design Philosophy
