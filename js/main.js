@@ -1,4 +1,4 @@
-// Beginner-level JavaScript (no frameworks)
+
 
 function setYear() {
   var yearEl = document.getElementById("year");
@@ -8,7 +8,7 @@ function setYear() {
 }
 
 function setActiveNavLink() {
-  // Mark current page link as active
+
   var path = window.location.pathname;
   var current = path.split("/").pop();
   if (!current) current = "index.html";
@@ -277,7 +277,7 @@ function setupContactForm() {
   });
 }
 
-// Run everything
+
 setYear();
 setActiveNavLink();
 setupMobileNav();
